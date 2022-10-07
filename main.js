@@ -32,13 +32,13 @@ function doubleMoney() {
   updateDOM();
 }
 
-// sort by richest with sort()
+// Sort by richest with sort()
 function sortByRichest() {
   data.sort((a, b) => b.money - a.money); //a.money and b.money because we sort by object value
   updateDOM();
 }
 
-//show only millionaires
+//Show only millionaires with filter()
 
 function showMillionaires() {
   data = data.filter((item) => {
